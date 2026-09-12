@@ -2489,38 +2489,14 @@ template = pn.template.FastListTemplate(
         "World Bank Indicators — "
         "Analytics & ML Lab"
     ),
-
     sidebar=sidebar,
-
     sidebar_width=300,
-
     main=[
-
-        pn.Tabs(
-
-            (
-                "Executive Summary",
-                summary_tab
-            ),
-
-            (
-                "In-Depth Insights",
-                insights_tab
-            ),
-
-            (
-                "Machine Learning Lab",
-                ml_tab
-            ),
-
-            sizing_mode="stretch_width",
-
-            tabs_location="above"
-        )
+        pn.Tabs(("Executive Summary", summary_tab), ("In-Depth Insights",insights_tab), 
+            ("Machine Learning Lab", ml_tab), sizing_mode="stretch_width", tabs_location="above")
     ],
 
     accent_base_color=COLOR_PRIMARY,
-
     header_background=COLOR_PRIMARY,
 )
 
